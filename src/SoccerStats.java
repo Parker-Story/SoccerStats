@@ -15,5 +15,5 @@ import java.util.Scanner;
  */
 class SoccerStats 
 {
-
+    
 }
