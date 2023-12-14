@@ -111,7 +111,9 @@ class SoccerStats
       {
          while (scanner.hasNextLine()) 
          {
-
+            String line = scanner.nextLine();
+            String[] request = line.split(" ");
+            String command = request[0];
          }
       
       }
