@@ -114,9 +114,33 @@ class SoccerStats
             String line = scanner.nextLine();
             String[] request = line.split(" ");
             String command = request[0];
+
+            if (command.equals("STATS")) 
+            {
+               String teamName = request[1] + " " + request[2];
+               if (teams.containsKey(teamName)) 
+               {
+                  result.append("TEAM: " + teams.get(teamName).getTeamStats()).append("\n");
+               } 
+               else 
+               {
+                  result.append("TEAM: ").append(teamName).append(" NOT FOUND\n");
+               }
+            } 
+            /*
+            else if (command.equals("BEST")) 
+            {
+               Team bestTeam = getBestTeam();
+               result.append("BEST: " + bestTeam.getTeamStats()).append("\n");
+            } 
+            else if (command.equals("HSCORING")) 
+            {
+               result.append(getHighScoringTeams()).append("\n");
+            } 
+            */
          }
-      
       }
+
       catch(FileNotFoundException e)
       {
          System.out.println("File Not Found Exception");
