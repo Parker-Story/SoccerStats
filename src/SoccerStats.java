@@ -97,4 +97,28 @@ class SoccerStats
        }
     }
 
+    /**
+    * Processes requests for league statistics and generates the corresponding output.
+    *
+    * @param statsFile The name of the file containing requests for league statistics.
+    * @return A string containing the responses to the requests.
+    */
+   public String getStats(String statsFile) 
+   {
+      StringBuilder result = new StringBuilder();
+      
+      try (Scanner scanner = new Scanner(new File(statsFile))) 
+      {
+         while (scanner.hasNextLine()) 
+         {
+
+         }
+      
+      }
+      catch(FileNotFoundException e)
+      {
+         System.out.println("File Not Found Exception");
+      }
+      return result.toString();  
+   }
 }
