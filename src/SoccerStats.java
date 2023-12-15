@@ -127,17 +127,15 @@ class SoccerStats
                   result.append("TEAM: ").append(teamName).append(" NOT FOUND\n");
                }
             } 
-            /*
             else if (command.equals("BEST")) 
             {
                Team bestTeam = getBestTeam();
                result.append("BEST: " + bestTeam.getTeamStats()).append("\n");
-            } 
+            }  
             else if (command.equals("HSCORING")) 
             {
                result.append(getHighScoringTeams()).append("\n");
             } 
-            */
          }
       }
 
@@ -181,4 +179,42 @@ class SoccerStats
     
        return bestTeam;
     }
+
+    /**
+    * Finds teams that have scored more goals than the best team.
+    *
+    * @return A list of team names with more goals scored than the best team or an empty list if none.
+    */
+   private String getHighScoringTeams() 
+   {
+      Team bestTeam = getBestTeam();
+      
+      if (bestTeam == null) 
+      {
+         return "HIGH SCORERS: NONE";
+      }
+   
+      StringBuilder highScorers = new StringBuilder();
+      boolean first = true;
+   
+      for (Team team : teams.values()) 
+      {
+         if (team != bestTeam && team.getGoalsFor() > bestTeam.getGoalsFor()) 
+         {
+            if (!first) 
+            {
+               highScorers.append(", ");
+            }
+            highScorers.append(team.getName());
+            first = false;
+         }
+      }
+      if (first) 
+      {
+        // No teams scored higher than the best team
+         return "HIGH SCORERS: NONE";
+      }
+    
+      return "HIGH SCORERS: " + highScorers.toString();
+   }
 }
