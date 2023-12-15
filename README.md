@@ -5,10 +5,7 @@
 1. [Introduction](#1-introduction)
 2. [Getting Started](#2-getting-started)
 3. [File Requirements](#3-file-requirements)
-4. [Class Overview]()
-   * [SoccerStats Class]()
-   * [Team Class]()
-5. [Sample Input and Output]()
+4. [Sample Input and Output]()
 
 ## 1. Introduction 
 
@@ -37,5 +34,23 @@ The text file for instructions/requests must contain one request per line, with 
 * BEST
 * HSCORING
 
-## 4. Usage
 
+## 4. Sample Input and Output
+
+Sample input file contents and corresponding output:
+ 
+Input (requests.txt):
+
+STATS Borussia Dortmund
+STATS Schalke 04
+STATS ULM Warhawks
+BEST
+HSCORING
+
+Output (TODO: PUT CSV FILE):
+
+TEAM: Borussia Dortmund W: 0 D: 0 L: 1 GF: 2 GA: 3 PTS: 0
+TEAM: Schalke 04 W: 1 D: 0 L: 0 GF: 2 GA: 0 PTS: 3
+TEAM: ULM Warhawks NOT FOUND
+BEST: Meidericher SV W: 1 D: 0 L: 0 GF: 4 GA: 1 PTS: 3
+HIGH SCORERS: NONE
