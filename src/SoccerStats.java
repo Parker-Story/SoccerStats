@@ -147,4 +147,38 @@ class SoccerStats
       }
       return result.toString();  
    }
+
+   /**
+    * Determines the team with the best statistics (most points), considering tiebreakers.
+    *
+    * @return The best team.
+    */
+    private Team getBestTeam() 
+    {
+       Team bestTeam = null;
+    
+       for (Team team : teams.values()) 
+       {
+          if (bestTeam == null || team.getPoints() > bestTeam.getPoints()) 
+          {
+             bestTeam = team;
+          } 
+          else if (team.getPoints() == bestTeam.getPoints()) 
+          {
+             if (team.getGoalDifference() > bestTeam.getGoalDifference()) 
+             {
+                bestTeam = team;
+             } 
+             else if (team.getGoalDifference() == bestTeam.getGoalDifference()) 
+             {
+                if (team.getGoalsFor() > bestTeam.getGoalsFor()) 
+                {
+                   bestTeam = team;
+                }
+             }
+          }
+       }
+    
+       return bestTeam;
+    }
 }
