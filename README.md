@@ -5,10 +5,10 @@
 1. [Introduction](#1-introduction)
 2. [Getting Started](#2-getting-started)
 3. [File Requirements](#3-file-requirements)
-4. [Usage](#)
-5. [Class Overview]()
+4. [Class Overview]()
    * [SoccerStats Class]()
-6. [Sample Input and Output]()
+   * [Team Class]()
+5. [Sample Input and Output]()
 
 ## 1. Introduction 
 
@@ -16,7 +16,7 @@ This Java program, SoccerStats, is designed to manage and analyze soccer league 
 
 ## 2. Getting Started
 
-To use this program, follow the steps below:
+To use this program,
 
 Download the Team.java and SoccerStats.java files.
 Ensure you have a valid CSV file with game scores (e.g., soccer_scores.csv).
@@ -26,12 +26,16 @@ Create a text file containing requests for league statistics (e.g., requests.txt
 
 The CSV file must have the following format:
 
-Home Team, Away Team, Home Goals, Away Goals
+** Home Team, Away Team, Home Goals, Away Goals ** 
 
-Example CSV file: Download Sample CSV
+Example CSV file: [Download CSV]()
+Example requests file: [Download Requests File]()
 
 The text file for instructions/requests must contain one request per line, with possible requests being:
 
 * STATS team
 * BEST
 * HSCORING
+
+## 4. Usage
+
