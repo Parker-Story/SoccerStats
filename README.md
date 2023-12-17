@@ -15,8 +15,8 @@ This Java program, SoccerStats, is designed to manage and analyze soccer league 
 
 To use this program,
 
-Download the Team.java and SoccerStats.java files.
-Ensure you have a valid CSV file with game scores (e.g., soccer_scores.csv).
+Download the [Team.java]() and [SoccerStats.java]() files.
+Ensure you have a valid CSV file with match data (e.g., match_data.csv).
 Create a text file containing requests for league statistics (e.g., requests.txt).
 
 ## 3.  File Requirements
@@ -47,7 +47,7 @@ STATS ULM Warhawks
 BEST
 HSCORING
 
-Output (TODO: PUT CSV FILE):
+Output (match_data.csv):
 
 TEAM: Borussia Dortmund W: 0 D: 0 L: 1 GF: 2 GA: 3 PTS: 0
 TEAM: Schalke 04 W: 1 D: 0 L: 0 GF: 2 GA: 0 PTS: 3
