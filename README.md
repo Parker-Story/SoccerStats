@@ -39,7 +39,7 @@ The text file for instructions/requests must contain one request per line, with 
 
 Sample input file contents and corresponding output:
  
-Input (requests.txt):
+requests.txt:
 
 STATS Borussia Dortmund
 STATS Schalke 04
@@ -47,10 +47,38 @@ STATS ULM Warhawks
 BEST
 HSCORING
 
-Output (match_data.csv):
+match_data.csv:
 
-TEAM: Borussia Dortmund W: 0 D: 0 L: 1 GF: 2 GA: 3 PTS: 0
-TEAM: Schalke 04 W: 1 D: 0 L: 0 GF: 2 GA: 0 PTS: 3
+Werder Bremen,Borussia Dortmund,3,2
+Hertha BSC Berlin,1. FC Nuernberg,1,1
+Preussen Muenster,Hamburger SV,1,1
+Eintracht Frankfurt,1. FC Kaiserslautern,1,1
+Karlsruher SC,Meidericher SV,1,4
+1. FC Saarbruecken,1. FC Koeln,1,3
+TSV 1860 Muenchen,Eintracht Braunschweig,1,1
+Schalke 04,VfB Stuttgart,2,0
+Borussia Dortmund,TSV 1860 Muenchen,3,3
+1. FC Nuernberg,Werder Bremen,3,0
+Hamburger SV,1. FC Saarbruecken,4,2
+1. FC Kaiserslautern,Schalke 04,2,3
+Meidericher SV,Eintracht Frankfurt,3,1
+1. FC Koeln,Karlsruher SC,6,3
+Eintracht Braunschweig,Preussen Muenster,1,0
+VfB Stuttgart,Hertha BSC Berlin,2,0
+Werder Bremen,VfB Stuttgart,7,2
+Hertha BSC Berlin,1. FC Kaiserslautern,2,2
+Preussen Muenster,Meidericher SV,4,2
+Eintracht Frankfurt,1. FC Nuernberg,2,3
+Karlsruher SC,Hamburger SV,0,4
+1. FC Saarbruecken,Eintracht Braunschweig,2,2
+TSV 1860 Muenchen,1. FC Koeln,1,3
+Schalke 04,Borussia Dortmund,6,1
+
+
+Output:
+
+TEAM: Borussia Dortmund W: 0 D: 1 L: 2 GF: 6 GA: 12 PTS: 1
+TEAM: Schalke 04 W: 3 D: 0 L: 0 GF: 11 GA: 3 PTS: 9
 TEAM: ULM Warhawks NOT FOUND
-BEST: Meidericher SV W: 1 D: 0 L: 0 GF: 4 GA: 1 PTS: 3
-HIGH SCORERS: NONE
+BEST: Schalke 04 W: 3 D: 0 L: 0 GF: 11 GA: 3 PTS: 9
+HIGH SCORERS: 1. FC Koeln
