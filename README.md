@@ -5,7 +5,8 @@
 1. [Introduction](#1-introduction)
 2. [Getting Started](#2-getting-started)
 3. [File Requirements](#3-file-requirements)
-4. [Sample Input and Output]()
+4. [Sample Input and Output](#4-sample-input-and-output)
+5. [Important Notes](#5-important-notes)
 
 ## 1. Introduction 
 
@@ -17,6 +18,7 @@ To use this program,
 
 Download the [Team.java]() and [SoccerStats.java]() files.
 Ensure you have a valid CSV file with match data (e.g., match_data.csv).
+
 Create a text file containing requests for league statistics (e.g., requests.txt).
 
 ## 3.  File Requirements
@@ -26,13 +28,14 @@ The CSV file must have the following format:
 ** Home Team, Away Team, Home Goals, Away Goals ** 
 
 Example CSV file: [Download CSV]()
-Example requests file: [Download Requests File]()
 
 The text file for instructions/requests must contain one request per line, with possible requests being:
 
 * STATS team
 * BEST
 * HSCORING
+
+Example requests file: [Download Requests File]()
 
 
 ## 4. Sample Input and Output
@@ -82,3 +85,15 @@ TEAM: Schalke 04 W: 3 D: 0 L: 0 GF: 11 GA: 3 PTS: 9
 TEAM: ULM Warhawks NOT FOUND
 BEST: Schalke 04 W: 3 D: 0 L: 0 GF: 11 GA: 3 PTS: 9
 HIGH SCORERS: 1. FC Koeln
+
+
+## 5. Important Notes:
+
+* Best Team Tie-Breakers:
+
+The "Best" team is determined by the number of points earned by the team. If two teams have the same points earned then the tie-breakers are:
+        * Largest goal differential (the difference between goal scored and goals allowed)
+        * Most goals scored
+(It is technically possible for a file to contain two teams that share all of the above criteria. At this time, this project cannot handle such cases. Beware.)
+
+Thank you so much for taking the time to read through this and potentially use this software for something that benefits you! Please feel free to contact me via email if you have any questions: parkerglenn03@gmail.com
