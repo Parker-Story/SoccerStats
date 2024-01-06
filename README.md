@@ -52,30 +52,30 @@ HSCORING
 
 match_data.csv:
 
-Werder Bremen,Borussia Dortmund,3,2__
-Hertha BSC Berlin,1. FC Nuernberg,1,1__
-Preussen Muenster,Hamburger SV,1,1__
-Eintracht Frankfurt,1. FC Kaiserslautern,1,1__
-Karlsruher SC,Meidericher SV,1,4__
-1. FC Saarbruecken,1. FC Koeln,1,3__
-TSV 1860 Muenchen,Eintracht Braunschweig,1,1__
-Schalke 04,VfB Stuttgart,2,0__
-Borussia Dortmund,TSV 1860 Muenchen,3,3__
-1. FC Nuernberg,Werder Bremen,3,0__
-Hamburger SV,1. FC Saarbruecken,4,2__
-1. FC Kaiserslautern,Schalke 04,2,3__
-Meidericher SV,Eintracht Frankfurt,3,1__
-1. FC Koeln,Karlsruher SC,6,3__
-Eintracht Braunschweig,Preussen Muenster,1,0__
-VfB Stuttgart,Hertha BSC Berlin,2,0__
-Werder Bremen,VfB Stuttgart,7,2__
-Hertha BSC Berlin,1. FC Kaiserslautern,2,2__
-Preussen Muenster,Meidericher SV,4,2__
-Eintracht Frankfurt,1. FC Nuernberg,2,3__
-Karlsruher SC,Hamburger SV,0,4__
-1. FC Saarbruecken,Eintracht Braunschweig,2,2__
-TSV 1860 Muenchen,1. FC Koeln,1,3__
-Schalke 04,Borussia Dortmund,6,1__
+Werder Bremen,Borussia Dortmund,3,2-   
+Hertha BSC Berlin,1. FC Nuernberg,1,1-  
+Preussen Muenster,Hamburger SV,1,1-  
+Eintracht Frankfurt,1. FC Kaiserslautern,1,1-  
+Karlsruher SC,Meidericher SV,1,4-  
+1. FC Saarbruecken,1. FC Koeln,1,3-  
+TSV 1860 Muenchen,Eintracht Braunschweig,1,1-  
+Schalke 04,VfB Stuttgart,2,0-  
+Borussia Dortmund,TSV 1860 Muenchen,3,3-  
+1. FC Nuernberg,Werder Bremen,3,0-  
+Hamburger SV,1. FC Saarbruecken,4,2-  
+1. FC Kaiserslautern,Schalke 04,2,3-  
+Meidericher SV,Eintracht Frankfurt,3,1-  
+1. FC Koeln,Karlsruher SC,6,3-  
+Eintracht Braunschweig,Preussen Muenster,1,0-  
+VfB Stuttgart,Hertha BSC Berlin,2,0-  
+Werder Bremen,VfB Stuttgart,7,2-  
+Hertha BSC Berlin,1. FC Kaiserslautern,2,2-  
+Preussen Muenster,Meidericher SV,4,2-  
+Eintracht Frankfurt,1. FC Nuernberg,2,3-  
+Karlsruher SC,Hamburger SV,0,4-  
+1. FC Saarbruecken,Eintracht Braunschweig,2,2-  
+TSV 1860 Muenchen,1. FC Koeln,1,3-  
+Schalke 04,Borussia Dortmund,6,1-  
 
 
 Output:
